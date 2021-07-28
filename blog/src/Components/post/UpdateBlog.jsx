@@ -69,7 +69,8 @@ function UpdateBlog({match}) {
 
     const [post,setPost]=useState(initialValues);
     const [file,setFile]=useState('');
-    const url=post.picture?post.picture:'http://localhost:8000/file/1626504003635.blog.poster.png';
+    const ur="";
+    const url=post.picture?post.picture:`${ur}/file/1626504003635.blog.poster.png`;
     const [image,setImage]=useState(url);
 
 

@@ -1,6 +1,6 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
-const url="";
+const ur="";
 
 
 let gfs;
@@ -16,7 +16,7 @@ export const uploadImage= (request,response)=>{
     if(!request.file)
     return response.status(404).json("File not found");
 
-    const imageURL=`${url}/file/${request.file.filename}`;
+    const imageURL=`${ur}/file/${request.file.filename}`;
 
     response.status(200).json(imageURL);
     
