@@ -70,10 +70,10 @@ const useStyle=makeStyles((theme)=>(
 function CreateBlog() {
 
     const classes=useStyle();
-
+    const ur="";
     const [post, setPost]=useState(initialValues);
     const [file,setFile]=useState('');
-    const [image,setImage]=useState('http://localhost:8000/file/1626504003635.blog.poster.png');
+    const [image,setImage]=useState(`${ur}/file/1626504003635.blog.poster.png`);
     const {user}= useContext(Context);
     const location=useLocation();
     
