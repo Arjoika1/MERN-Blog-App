@@ -25,7 +25,7 @@ if(process.env.NODE_ENV==='production')
 const Port=process.env.PORT||8000;
 app.listen(Port,()=>console.log(`Server in running on port ${Port}`));
 
-const URL='mongodb+srv://Arjoika:iwantajob@G00gle@blogdata.cvg2h.mongodb.net/PROJECT0?retryWrites=true&w=majority'
+const URL='mongodb+srv://username:passsword@blogdata.cvg2h.mongodb.net/PROJECT0?retryWrites=true&w=majority'
 
 Connection(process.env.MONGODB_URI||URL);
 
